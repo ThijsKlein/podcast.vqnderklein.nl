@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: light) {
+    #favicon {
+        /* Path to your default favicon for light mode */
+        content: url('../svg/dark.svg');
+    }
+}
+
+
+/* Specify your dark mode favicon */
+
+@media (prefers-color-scheme: dark) {
+    #favicon {
+        /* Path to your dark mode favicon */
+        content: url('../svg/white.svg');
+    }
+}
+
+@font-face {
+    font-family: 'Novatica';
+    src: local('Novatica'), local('Novatica'), url('https://lib.vqnderklein.nl/fonts/NovaticaLight.woff2') format('woff2'), url('https://lib.vqnderklein.nl/fonts/NovaticaLight.woff') format('woff'), url('https://lib.vqnderklein.nl/fonts/Novatica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

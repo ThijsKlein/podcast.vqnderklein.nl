@@ -1,15 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(Podcast) - podcast.vqnderklein.nl</title>
+    <title>De magische en realistische podcast - podcast.vqnderklein.nl</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/assets.css">
+
+
+    <script src="/assets/js/app.js" defer></script>
+
+    <link rel="shortcut icon" href="/assets/svg/" type="image/x-icon">
+
 </head>
 
 <body>
 
-    <h1>Hello, little there</h1>
+
+
+    <div class="main_wrapper">
+
+        <div class="main_grid">
+
+            <nav>
+
+                <div class="main_navbar">
+                    <div class="logo">
+                        <div class="logo_wrapper">
+                            <div class="logo_sign">P</div>
+                            <div class="logoText">Podcast</div>
+                        </div>
+
+                    </div>
+                    <div class="navbar_links">
+                        <a onclick="SwitchToPage('0')" id="navPage0" class="NavLink" href="#"><img src="/assets/svg/icons/home.svg" alt="homeIcon">Home</a>
+                        <a onclick="SwitchToPage('1')" id="navPage1" class="NavLink" href="#"><img src="/assets/svg/icons/about.svg" alt="aboutIcon">Over</a>
+                        <a onclick="SwitchToPage('2')" id="navPage2" class="NavLink" href="#"><img src="/assets/svg/icons/podcast.svg" alt="episodeIcon" class="episode">Afleveringen</a>
+                        <a onclick="SwitchToPage('3')" id="navPage3" class="NavLink" href="#"><img src="/assets/svg/icons/news.svg" alt="newsIcon">Nieuws</a>
+                        <a onclick="SwitchToPage('4')" id="navPage4" class="NavLink" href="#"><img src="/assets/svg/icons/contact.svg" alt="contactIcon" class="episode">Contact</a>
+                    </div>
+                    <div>
+                        <div class="premium_header">
+                            <span class="premiumTitle">
+                        <img src="/assets/svg/icons/premium.svg" alt="premiumIcon"> <span class="Podcast_">PODCAST</span>
+                            </span>
+                            <p>Ook helemaal klaar met die vervelende onderbrekingen tijdens uw podcast? Neem dan de premium versie van deze podcast! </p>
+
+                            <a class="CallToAction" onclick="SwitchToPage('5')" href="#">Premium</a>
+
+                        </div>
+                        <p class="Promote">Design door <a href="https://vqnderklein.nl" target="_blank"><b>vqnderklein.nl</b></a></p>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+            <main>
+
+                <div class="main_information_wrapper">
+                    <div class="page_holder pageHidden" id="page0">
+
+                        <div class="pageheader">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Magisch & Realistisch
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+
+                        <a href="#" class="listenNowButton">
+                            <div class="listenNow">
+                                <div class="listenNowGrid">
+                                    <div class="listenNowLogo">
+                                        <img src="/assets/svg/white.svg" alt="ListennowLogo">
+                                    </div>
+                                    <div class="information">
+                                        <div class="informationTitle">
+                                            De magische podcast
+                                        </div>
+                                        <div class="informationSubTitle">
+                                            <div class="postcastId"><b>Episode 1</b></div>
+                                            <div class="postcastName">Het Magisch Realisme</div>
+                                        </div>
+                                        <div class="line">
+                                            <div class="lineFilled"></div>
+                                        </div>
+                                        <div class="timeTable">
+                                            <div class="begin">00:00</div>
+                                            <div class="controls">
+                                                <img src="/assets/svg/icons/repeat.svg" alt="repeatIcon" class="">
+                                                <img src="/assets/svg/icons/chevrons-left.svg" alt="leftIcon">
+                                                <img src="/assets/svg/icons/play.svg" class="play" onclick="SwitchToPage('2')" alt="playIcon">
+                                                <img src="/assets/svg/icons/chevrons-right.svg" alt="rightIcon">
+                                                <img src="/assets/svg/icons/shuffle.svg" alt="shuffleIcon">
+                                            </div>
+                                            <div class="end">##:##</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <br>
+
+                        <div class="NieuwsGrid">
+
+                            <div class="nieuws_item color1">
+                                <div class="AboutTitle">
+                                    Over de magische podcast
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+                            <div class="nieuws_item color2">
+                                <div class="AboutTitle">
+                                    Nieuws
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+
+                            <div class="about">
+                                <div class="AboutTitle">
+                                    Nieuws
+                                </div>
+                                <p>
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <br>
+                        <a href="#" onclick="SwitchToPage('4')" class="ContactAnchor">
+                            <div class="contact">
+                                <b style="font-weight: bold;">Nog vragen?</b> Neem vrijblijvend contact met ons op <img src="/assets/svg/icons/arrow-right.svg" alt="arrow">
+                            </div>
+                        </a>
+
+                        <br>
+                    </div>
+                    <div class="page_holder pageHidden" id="page1">
+
+                        <div class="pageheader half80">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Over de magische podcast
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+
+                        <div class="grid_AboutUs">
+                            <div class="left">
+                                <div class="dots"></div>
+                            </div>
+                            <div class="text">
+                                <div class="title">Team, <b>De Magische Podcast</b></div>
+
+                                <div class="informatieText">
+                                    Welkom bij de Magische Podcast, waar woorden tot leven komen en literaire ontdekkingen centraal staan. Wij zijn een dynamisch team van vier enthousiaste individuen, samengebracht door een gedeelde liefde voor boeken en een drang om de rijke geschiedenis
+                                    van literatuur te verkennen.<br><br>Ons team bestaat uit gepassioneerde lezers, elk met een uniek perspectief en een gezamenlijk doel om literaire verhalen tot leven te brengen. Achter
+                                    de microfoons staan Daniël, Grant, Cathelijne en Thijs. Samen vormen we een divers gezelschap van literatuurliefhebbers, elk met zijn eigen smaak en voorkeur.<br><br>Wat ons bijzonder maakt? Naast onze gedeelde liefde
+                                    voor literatuur hebben we het privilege om een historicus in ons midden te hebben, Grant. Met zijn diepgaande kennis van geschiedenis voegt hij een uniek perspectief toe aan onze podcast. We geloven dat begrip van het
+                                    verleden de sleutel is tot het begrijpen van het heden, en dit weerspiegelt zich in onze benadering van literaire tijdperken. Samen delen we verhalen, ontdekken we betekenissen en laten we de magie van literatuur tot
+                                    leven komen.<br><br> Veel luisterplezier! <br><br>
+                                </div>
+                            </div>
+                            <div class="right"></div>
+                        </div>
+
+                    </div>
+                    <div class="page_holder pageHidden" id="page2">
+
+                        <div class="pageheader half">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Episodes
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+                        <div class="listenNow Grid">
+                            <div class="episodeHeader">
+                                <img src="/assets/img/73428fujksdjf4u5iroefjw940u5jifke.png" alt="">
+                            </div>
+                            <div class="listenNowGrid">
+                                <div class="listenNowLogo">
+                                    <img src="/assets/svg/white.svg" alt="ListennowLogo">
+                                </div>
+                                <div class="information">
+                                    <div class="informationTitle">
+                                        De magische podcast
+                                    </div>
+                                    <div class="informationSubTitle">
+                                        <div class="postcastId"><b>Episode 1</b></div>
+                                        <div class="postcastName">Het Magisch Realisme</div>
+                                    </div>
+                                    <div class="line">
+                                        <div class="lineFilled"></div>
+                                    </div>
+                                    <div class="timeTable">
+                                        <div class="begin">00:00</div>
+                                        <div class="controls">
+                                            <img src="/assets/svg/icons/repeat.svg" alt="repeatIcon" class="">
+                                            <img src="/assets/svg/icons/chevrons-left.svg" alt="leftIcon">
+                                            <img src="/assets/svg/icons/play.svg" class="play" alt="playIcon">
+                                            <img src="/assets/svg/icons/chevrons-right.svg" alt="rightIcon">
+                                            <img src="/assets/svg/icons/shuffle.svg" alt="shuffleIcon">
+                                        </div>
+                                        <div class="end">##:##</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="page_holder pageHidden" id="page3">
+
+                        <div class="pageheader half">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Nieuws
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+                        <p class="LastUpdate">Laatste update was <b>20 Oktober</b> </p>
+                        <br>
+
+                        <div class="NieuwsWrapper">
+                            <div class="NieuwsItemContainer Item1">
+                                <div class="NieuwsTitle">
+                                    Eerste aflevering
+                                </div>
+                                <p class="date">20 Oktober</p>
+                                <br>
+                                <div class="informationTable">
+                                    <p>Het is met opwinding en trots dat we de allereerste aflevering van de <b>Magische Podcast</b> aan jullie presenteren! Na maanden van research, opnames en creatieve samenwerkingen is het moment eindelijk daar om onze
+                                        passie voor literatuur met jullie te delen.</p><br>
+                                    <p>We nodigen je uit om je koptelefoon op te zetten, achterover te leunen en mee te reizen door de betoverende wereld van literatuur. Luister naar de eerste aflevering op <u>www.zekergeenscam.nl</u> en laat je inspireren
+                                        door de kracht van het gesproken woord.</p><br>
+                                    <p>Dank aan iedereen die deze reis mogelijk heeft gemaakt. Dit is slechts het begin. Blijf luisteren, blijf ontdekken en laten we samen een wereld van woorden verkennen.</p><br>
+                                    <a class="Lnk" href="#" onclick="SwitchToPage('2')">Luister de aflerving hier</a> <br><br>
+                                </div>
+                            </div>
+                            <div class="NieuwsItemContainer Item2">
+                                <div class="NieuwsTitle">
+                                    Release Website
+                                </div>
+                                <p class="date">15 Oktober</p>
+                                <br>
+                                <div class="informationTable">
+
+                                    <p>We zijn verheugd om aan te kondigen dat onze spiksplinternieuwe website officieel live is! Na maanden van toewijding, creativiteit en passie is het moment eindelijk daar. Onze digitale thuishaven is nu toegankelijk
+                                        voor iedereen die de magie van literatuur wil verkennen.</p>
+                                    <br>
+                                    <p>We nodigen je uit om deel te nemen aan deze spannende reis. Bezoek onze website op <u>www.zekergeenscam.nl</u> en ervaar de kracht van woorden in een fris digitaal jasje. Of je nu een fervent lezer bent, een liefhebber
+                                        van podcasts, of gewoon op zoek bent naar literaire inspiratie, er is voor elk wat wils.</p><br>
+                                    <p>Dank aan iedereen die heeft bijgedragen aan dit project. Laten we samen een nieuw hoofdstuk schrijven op deze digitale pagina's.<br><br> Veel ontdekplezier!</p><br>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_holder pageHidden" id="page4">
+
+                        <div class="pageheader half">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Contact
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+
+                    </div>
+                    <div class="page_holder pageHidden" id="page5">
+
+                        <div class="pageheader half">
+                            <div class="pageHeaderContent">
+                                <div class="headerPageTitle">
+                                    De Literaire Podcast
+                                </div>
+                                <div class="headerSubTitle">
+                                    Premium
+                                </div>
+                            </div>
+                            <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+
+    </div>
+
+
 
 </body>
 
