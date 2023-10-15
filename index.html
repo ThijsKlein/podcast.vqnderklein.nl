@@ -11,6 +11,7 @@
 
 
     <script src="/assets/js/app.js" defer></script>
+    <script src='/assets/js/musicPlayer.js' defer></script>
 
     <link rel="shortcut icon" href="/assets/svg/white.svg" type="image/x-icon">
 
@@ -91,18 +92,18 @@
                                             <div class="postcastName">Het Magisch Realisme</div>
                                         </div>
                                         <div class="line">
-                                            <div class="lineFilled"></div>
+                                            <div class="lineFilled2"></div>
                                         </div>
                                         <div class="timeTable">
-                                            <div class="begin">00:00</div>
+                                            <div class="begin2">00:00</div>
                                             <div class="controls">
                                                 <img src="/assets/svg/icons/repeat.svg" alt="repeatIcon" class="">
                                                 <img src="/assets/svg/icons/chevrons-left.svg" alt="leftIcon">
-                                                <img src="/assets/svg/icons/play.svg" class="play" onclick="SwitchToPage('2')" alt="playIcon">
+                                                <img src="/assets/svg/icons/play.svg" class="play2" onclick="SwitchToPage('2')" alt="playIcon">
                                                 <img src="/assets/svg/icons/chevrons-right.svg" alt="rightIcon">
                                                 <img src="/assets/svg/icons/shuffle.svg" alt="shuffleIcon">
                                             </div>
-                                            <div class="end">##:##</div>
+                                            <div class="end2">##:##</div>
                                         </div>
                                     </div>
                                 </div>
@@ -243,11 +244,11 @@
                                     <div class="timeTable">
                                         <div class="begin">00:00</div>
                                         <div class="controls">
-                                            <img src="/assets/svg/icons/repeat.svg" alt="repeatIcon" class="">
-                                            <img src="/assets/svg/icons/chevrons-left.svg" alt="leftIcon">
-                                            <img src="/assets/svg/icons/play.svg" class="play" alt="playIcon">
-                                            <img src="/assets/svg/icons/chevrons-right.svg" alt="rightIcon">
-                                            <img src="/assets/svg/icons/shuffle.svg" alt="shuffleIcon">
+                                            <img src="/assets/svg/icons/repeat.svg" id="repeat" alt="repeatIcon" class="">
+                                            <img src="/assets/svg/icons/chevrons-left.svg" id="backwards" alt="leftIcon">
+                                            <img src="/assets/svg/icons/play.svg" class="play playSelector" id="play" alt="playIcon">
+                                            <img src="/assets/svg/icons/chevrons-right.svg" id="forwards" alt="rightIcon">
+                                            <img src="/assets/svg/icons/shuffle.svg" id="shuffle" alt="shuffleIcon">
                                         </div>
                                         <div class="end">##:##</div>
                                     </div>
@@ -333,9 +334,9 @@
                             <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
                         </div>
                         <div class="pageNav">
-                            <a id="Navsection1" href="#" class="activeLink" onclick="ScrollToPageSection('1')">Contact</a>
-                            <a id="Navsection2" href="#" onclick="ScrollToPageSection('2')">Disclaimer</a>
-                            <a id="Navsection3" href="#" onclick="ScrollToPageSection('3')">Copyright</a>
+                            <a id="Navsection1 " href="#" class="activeLink NavNav indexHome" onclick="ScrollToPageSection('1')">Contact</a>
+                            <a id="Navsection2" href="#" class="NavNav" onclick="ScrollToPageSection('2')">Disclaimer</a>
+                            <a id="Navsection3" href="#" class="NavNav" onclick="ScrollToPageSection('3')">Copyright</a>
                         </div>
 
                         <div class="Nagigation pageSection" id="section1"></div>

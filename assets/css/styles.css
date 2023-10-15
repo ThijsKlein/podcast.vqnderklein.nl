@@ -6,6 +6,7 @@
     
     body {
         background-color: #040d21;
+        scroll-behavior: smooth scroll;
     }
     
     .main_grid {
@@ -773,4 +774,10 @@
         display: block;
         margin: 1em;
         border-radius: 10px;
+    }
+    
+    .lineFilled {
+        background-color: #b2b8d3;
+        height: 5px;
+        width: 0%;
     }

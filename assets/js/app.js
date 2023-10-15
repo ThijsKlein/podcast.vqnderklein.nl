@@ -1,7 +1,8 @@
-var currentPage = '0';
+var currentPage = '2';
+var currentSection = '1';
+var sections;
 
 function SwitchToPage(pageId) {
-
     var idSelectorNew = 'page' + pageId;
     var idSelectorNow = 'page' + currentPage;
 
@@ -31,27 +32,53 @@ function SwitchToPage(pageId) {
             activeElementNew.classList.add('active');
         }
     }
-}
 
-if (currentPage === '4') {
+    if (currentPage === '4') {
 
-    console.log('hi');
+        sections = document.querySelectorAll('.pageSection');
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('.pageSection');
-
-
+        let loadedSection = null;
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                const sectionId = entry.target.id;
+                const isIntersecting = entry.isIntersecting;
 
-                    document.getElementById('Navsection' + currentSection).classList.remove('activeLink');
+                if (isIntersecting && sectionId !== loadedSection) {
+                    if (loadedSection) {
+                        const navSection = document.getElementById('Navsection' + loadedSection);
+                        const navElement = document.getElementById('Nav' + loadedSection); // Corrected line
 
-                    document.getElementById('Nav' + entry.target.id).classList.add('activeLink');
+                        console.log('navSection:', navSection);
+                        console.log('navElement:', navElement);
 
-                    const numberRegex = /\d+/;
-                    currentSection = parseInt(entry.target.id.match(numberRegex)[0], 10);
+                        if (navSection) {
+                            const playElements = document.querySelectorAll('.NavNav');
+                            playElements.forEach((element) => {
+                                element.classList.remove('activeLink');
+                            });
+                        }
+                    }
+
+                    const newNavElement = document.getElementById('Nav' + sectionId); // Changed to sectionId
+                    console.log('newNavElement:', newNavElement);
+
+                    if (newNavElement === null) {
+                        document.getElementById('Navsection2').classList.remove('activeLink');
+
+                        document.getElementsByClassName('indexHome')[0].classList.add('activeLink');
+                    }
+
+                    if (newNavElement) {
+                        const playElements = document.querySelectorAll('.NavNav');
+                        playElements.forEach((element) => {
+                            element.classList.remove('activeLink');
+                        });
+                        newNavElement.classList.add('activeLink');
+                    }
+
+                    loadedSection = sectionId;
+                    currentSection = parseInt(sectionId.match(/\d+/)[0], 10);
                 }
             });
         }, { threshold: 0.5 });
@@ -59,11 +86,7 @@ if (currentPage === '4') {
         sections.forEach(section => {
             observer.observe(section);
         });
-
-
-
-
-    });
+    }
 }
 
 SwitchToPage(currentPage)
@@ -77,8 +100,6 @@ function ScrollToPageSection(sectionId) {
 }
 
 var currentSection = '1';
-
-
 
 function submitForm() {
     const name = document.getElementById('name').value;
