@@ -1,4 +1,4 @@
-var currentPage = '2';
+var currentPage = '0';
 var currentSection = '1';
 var sections;
 

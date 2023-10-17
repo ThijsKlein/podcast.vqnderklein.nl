@@ -11,7 +11,7 @@ const fastBackward = document.getElementById('backwards');
 var clickCount = 0;
 var clickCount2 = 0;
 
-const audio = new Audio('/assets/mp3/KEiiNO - UNBREAKABLE (Lyrics).mp3');
+const audio = new Audio('/assets/mp3/Podcast - Nederlands.mp3');
 
 audio.addEventListener('loadedmetadata', () => {
     totalTimeDisplay.innerText = formatTime(audio.duration);
@@ -24,12 +24,17 @@ playPauseButton.addEventListener('click', () => {
         clickCount = 0;
         clearInterval(backwardInterval);
 
+        document.getElementsByClassName('loading')[0].style.opacity = '1';
+
         document.getElementsByClassName('playSelector')[0].src = '/assets/svg/icons/pause.svg';
     } else {
         audio.pause();
         playPauseButton.innerText = 'Play';
         clickCount = 0;
         clearInterval(backwardInterval);
+
+        document.getElementsByClassName('loading')[0].style.opacity = '0';
+
 
         document.getElementsByClassName('playSelector')[0].src = '/assets/svg/icons/play.svg';
     }

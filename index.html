@@ -36,11 +36,11 @@
 
                     </div>
                     <div class="navbar_links">
-                        <a onclick="SwitchToPage('0')" id="navPage0" class="NavLink" href="#"><img src="/assets/svg/icons/home.svg" alt="homeIcon">Home</a>
-                        <a onclick="SwitchToPage('1')" id="navPage1" class="NavLink" href="#"><img src="/assets/svg/icons/about.svg" alt="aboutIcon">Over</a>
-                        <a onclick="SwitchToPage('2')" id="navPage2" class="NavLink" href="#"><img src="/assets/svg/icons/podcast.svg" alt="episodeIcon" class="episode">Afleveringen</a>
-                        <a onclick="SwitchToPage('3')" id="navPage3" class="NavLink" href="#"><img src="/assets/svg/icons/news.svg" alt="newsIcon">Nieuws</a>
-                        <a onclick="SwitchToPage('4')" id="navPage4" class="NavLink" href="#"><img src="/assets/svg/icons/contact.svg" alt="contactIcon" class="episode">Contact</a>
+                        <a onclick="SwitchToPage('0')" id="navPage0" class="NavLink" href="#"><img src="/assets/svg/icons/home.svg" alt="homeIcon"><span class="navContent">Home</span></a>
+                        <a onclick="SwitchToPage('1')" id="navPage1" class="NavLink" href="#"><img src="/assets/svg/icons/about.svg" alt="aboutIcon"><span class="navContent">Over</span></a>
+                        <a onclick="SwitchToPage('2')" id="navPage2" class="NavLink" href="#"><img src="/assets/svg/icons/podcast.svg" alt="episodeIcon" class="episode"><span class="navContent">Afleveringen</span></a>
+                        <a onclick="SwitchToPage('3')" id="navPage3" class="NavLink" href="#"><img src="/assets/svg/icons/news.svg" alt="newsIcon"><span class="navContent">Nieuws</span></a>
+                        <a onclick="SwitchToPage('4')" id="navPage4" class="NavLink" href="#"><img src="/assets/svg/icons/contact.svg" alt="contactIcon" class="episode"><span class="navContent">Contact</span></a>
                     </div>
                     <div>
                         <div class="premium_header">
@@ -103,7 +103,7 @@
                                                 <img src="/assets/svg/icons/chevrons-right.svg" alt="rightIcon">
                                                 <img src="/assets/svg/icons/shuffle.svg" alt="shuffleIcon">
                                             </div>
-                                            <div class="end2">##:##</div>
+                                            <div class="end2">40:00</div>
                                         </div>
                                     </div>
                                 </div>
@@ -222,41 +222,68 @@
                             </div>
                             <img src="/assets/img/223cbea390d5a43afb9611a4f361827c.jpg" alt="headerImage">
                         </div>
+
                         <div class="listenNow Grid">
-                            <div class="episodeHeader">
-                                <img src="/assets/img/73428fujksdjf4u5iroefjw940u5jifke.png" alt="">
-                            </div>
-                            <div class="listenNowGrid">
-                                <div class="listenNowLogo">
-                                    <img src="/assets/svg/white.svg" alt="ListennowLogo">
+                            <div class="audio-player" id="customAudioPlayer1">
+                                <div class="episodeHeader">
+                                    <img src="/assets/img/73428fujksdjf4u5iroefjw940u5jifke.png" alt="">
                                 </div>
-                                <div class="information">
-                                    <div class="informationTitle">
-                                        De magische podcast
+                                <div class="listenNowGrid">
+
+
+                                    <div class="listenNowLogo">
+                                        <img src="/assets/svg/white.svg" alt="ListennowLogo">
                                     </div>
-                                    <div class="informationSubTitle">
-                                        <div class="postcastId"><b>Episode 1</b></div>
-                                        <div class="postcastName">Het Magisch Realisme</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="lineFilled"></div>
-                                    </div>
-                                    <div class="timeTable">
-                                        <div class="begin">00:00</div>
-                                        <div class="controls">
-                                            <img src="/assets/svg/icons/repeat.svg" id="repeat" alt="repeatIcon" class="">
-                                            <img src="/assets/svg/icons/chevrons-left.svg" id="backwards" alt="leftIcon">
-                                            <img src="/assets/svg/icons/play.svg" class="play playSelector" id="play" alt="playIcon">
-                                            <img src="/assets/svg/icons/chevrons-right.svg" id="forwards" alt="rightIcon">
-                                            <img src="/assets/svg/icons/shuffle.svg" id="shuffle" alt="shuffleIcon">
+                                    <div class="information">
+
+
+                                        <div class="flexGridOpposite">
+                                            <div>
+                                                <div class="informationTitle">
+                                                    De magische podcast
+                                                </div>
+                                                <div class="informationSubTitle">
+                                                    <div class="postcastId"><b>Episode 1</b></div>
+                                                    <div class="postcastName">Het Magisch Realisme</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="loading">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
                                         </div>
-                                        <div class="end">##:##</div>
+
+
+                                        <div class="line">
+                                            <div class="lineFilled"></div>
+                                        </div>
+                                        <div class="timeTable">
+                                            <div class="begin">00:00</div>
+                                            <div class="controls">
+                                                <img src="/assets/svg/icons/repeat.svg" id="repeat" alt="repeatIcon" class="">
+                                                <img src="/assets/svg/icons/chevrons-left.svg" id="backwards" alt="leftIcon">
+                                                <img src="/assets/svg/icons/play.svg" class="play playSelector" id="play" alt="playIcon">
+                                                <img src="/assets/svg/icons/chevrons-right.svg" id="forwards" alt="rightIcon">
+                                                <img src="/assets/svg/icons/shuffle.svg" id="shuffle" alt="shuffleIcon">
+                                            </div>
+                                            <div class="end">##:##</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
                         </div>
                         <br>
                     </div>
+                    <br>
+
                     <div class="page_holder pageHidden" id="page3">
 
                         <div class="pageheader half">
