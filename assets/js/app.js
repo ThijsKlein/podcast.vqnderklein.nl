@@ -33,6 +33,22 @@ function SwitchToPage(pageId) {
         }
     }
 
+
+    if (currentPage === '0' || currentPage === '2') {
+
+        document.querySelector('.MediaPlayerBox').style.opacity = '0';
+        document.querySelector('.MediaPlayerBox').style.position = 'absolute';
+
+
+    } else {
+
+        document.querySelector('.MediaPlayerBox').style.opacity = '1';
+        document.querySelector('.MediaPlayerBox').style.position = 'relative';
+
+
+
+    }
+
     if (currentPage === '4') {
 
         sections = document.querySelectorAll('.pageSection');
